@@ -57,10 +57,7 @@ private:
 double balance;
 string first_name;
 string last_name;
-/*char x1[7]={'T','a','b','r','a','i','z'};
-char x2[6]={'H','a','s','s','a','n'};
-char y1[5]={'U','z','a','i','r'};
-char y2[5]={'N','i','a','z','i'};*/
+
 };
 
 
@@ -71,20 +68,38 @@ int main(int argc, char const *argv[])
   Employee emp2;
   string name1,name2;
   double monthly_salary;
- /*char x[20];
- char y[20];*/
-cout<<"Enter first name of employee"<<endl;
+
+cout<<"Enter first name of employee 1"<<endl;
 cin>>name1;
 emp1.set_last_name(name1);
-cout<<"Enter last name of employee"<<endl;
+cout<<"Enter last name of employee 1"<<endl;
 cin>>name2;
 emp1.set_last_name(name2);
 
 
-cout << "Enter employees monthly salary" << '\n';
+cout << "Enter employee 1's monthly salary" << '\n';
 cin>>monthly_salary;
 emp1.setBalance(monthly_salary);
 
-cout<<"Name of employee is: "<< emp1.get_first_name()<<" "<<emp1.get_last_name()<<endl;
-cout<<"Monthly salary of employee is: "<<emp1.getBalance()<<endl;
+cout<<"Name of employee 1 is: "<< emp1.get_first_name()<<" "<<emp1.get_last_name()<<endl;
+cout<<"Monthly salary of employee 1 is: "<<emp1.getBalance()<<endl;
+
+cout<<'\n'<<endl;
+
+cout<<"Enter first name of employee 2"<<endl;
+cin>>name1;
+emp2.set_last_name(name1);
+cout<<"Enter last name of employee 2"<<endl;
+cin>>name2;
+emp2.set_last_name(name2);
+
+
+cout << "Enter employee 2's monthly salary" << '\n';
+cin>>monthly_salary;
+emp2.setBalance(monthly_salary);
+
+cout<<"Name of employee 2 is: "<< emp2.get_first_name()<<" "<<emp2.get_last_name()<<endl;
+cout<<"Monthly salary of employee 2 is: "<<emp2.getBalance()<<endl;
+
+
 }
